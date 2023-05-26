@@ -14,14 +14,23 @@ from tkinter import *
 import tkinter as tk
 
 root = tk.Tk()
+x = 100
+y = 45
 
 canvas = tk.Canvas(root, width=200, height=200, bg="#FF00FF");
 canvas.grid()
+for i in range(4):
 
+    if i >=3:
+        canvas.create_text(x, y, text="banana", font=("Arial", 16))
+
+    else:
+        canvas.create_text(x, y, text="ice cream", font=("Arial", 16))
+    y = y + 45
 '''
 Text Rendering Example:
                     x    y                                                       
-canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
+
 '''
 # Put your code below
 
